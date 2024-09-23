@@ -22,7 +22,7 @@
 			<property name="hibernate.hbm2ddl.auto" value="update" />
 		</properties>
 	</persistence-unit>
-	<persistence-unit name="mysql">
+<!--	<persistence-unit name="mysql">
 	
 		<class>br.com.caelum.vraptor.musicjungle.model.Music</class>
 		<class>br.com.caelum.vraptor.musicjungle.model.User</class>
@@ -38,6 +38,6 @@
 			<property name="hibernate.format_sql" value="false" />
 			<property name="hibernate.hbm2ddl.auto" value="update" />
 		</properties>
-	</persistence-unit>
+	</persistence-unit>-->
 	
 </persistence>
