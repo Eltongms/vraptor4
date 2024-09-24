@@ -5,6 +5,7 @@ import javax.enterprise.inject.Specializes;
 
 import br.com.caelum.vraptor.observer.upload.DefaultMultipartConfig;
 
+
 @ApplicationScoped
 @Specializes
 public class CustomMultipartConfig extends DefaultMultipartConfig {
