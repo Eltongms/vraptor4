@@ -21,6 +21,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.validation.constraints.NotNull;
@@ -52,7 +53,7 @@ public class User implements Serializable {
 	@Length(min = 3, max = 100)
 	private String name;
 
-	@ManyToMany
+	@ManyToMany(fetch = FetchType.EAGER)
 	private Set<Music> musics = new HashSet<>();
 
 	public String getLogin() {

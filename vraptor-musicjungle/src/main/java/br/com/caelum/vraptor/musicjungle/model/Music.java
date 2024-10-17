@@ -31,6 +31,7 @@ import javax.validation.constraints.Size;
 import org.hibernate.validator.constraints.NotEmpty;
 
 import br.com.caelum.vraptor.musicjungle.enums.MusicType;
+import javax.persistence.FetchType;
 
 /**
  * Music entity representing the table Music from 
@@ -52,7 +53,7 @@ public class Music {
     @Size(min = 6)
 	private String description;
 
-	@ManyToMany(mappedBy = "musics")
+	@ManyToMany(mappedBy = "musics",fetch = FetchType.EAGER)
 	private Set<User> owners = new HashSet<>();
 
 	@NotNull
